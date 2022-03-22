@@ -1,0 +1,53 @@
+.container-carrusel{
+    margin: 0%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: gray; */
+}
+.carrusel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    /* width: 60rem;
+    height: 60rem; */
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+.flecha{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    background-color: #5a9759;
+    cursor: pointer;
+}
+.flecha:hover{
+    background-color: #619f61;
+}
+.carrusel-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.carrusel-img img{
+    width: 80%;
+    height: 80%;
+}
