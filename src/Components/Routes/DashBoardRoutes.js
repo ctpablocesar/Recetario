@@ -1,18 +1,20 @@
 import React from 'react';
-import { Route, Switch, Redirect } from 'react-router';
+import { Redirect, Route, Switch } from 'react-router';
 import ScrollToTop from 'react-scroll-up';
-
-
+import { Contacto } from '../Secciones/Contacto/Contacto';
+import { Galeria } from '../Secciones/Galeria/Galeria';
+import { Inicio } from '../Secciones/Inicio/Inicio';
+import { RecetaCompleta } from '../Secciones/Recetas/RecetaCompleta';
+import { Recetas } from '../Secciones/Recetas/Recetas';
+import { Registrarse } from '../Secciones/Registrarse/Registrarse';
+import { Reset } from '../Secciones/Reset/Reset';
+import { ResetPassword } from '../Secciones/Reset/ResetPassword';
+import { Error } from '../Ui/Error';
 import { Navbar } from '../Ui/Navbar';
 
 
-import { Recetas } from '../Secciones/Recetas/Recetas';
-import { Contacto } from '../Secciones/Contacto/Contacto';
-import { RecetaCompleta } from '../Secciones/Recetas/RecetaCompleta';
-import { Registrarse } from '../Secciones/Registrarse/Registrarse';
-import { Galeria } from '../Secciones/Galeria/Galeria';
-import { Error } from '../Ui/Error';
-import {Inicio} from '../Secciones/Inicio/Inicio'
+
+
 
 export const DashBoardRoutes = () => {
     return (
@@ -26,6 +28,8 @@ export const DashBoardRoutes = () => {
                     <Route path="/Contacto" component={Contacto} />
                     <Route path="/Registrarse" component={Registrarse} />
                     <Route path="/Galeria" component={Galeria} />
+                    <Route path="/reset-password/:token" component={Reset} />
+                    <Route path="/reset" component={ResetPassword} />
                     <Route path="/Error" component={Error} />
                     <Redirect to="/Inicio" />
                 </Switch>
